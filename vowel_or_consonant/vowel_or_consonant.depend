@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1530004251 source:c:\users\bca\documents\codeblocks\vowel_or_consonant\main.c
+	<stdio.h>
+	<stdlib.h>
+

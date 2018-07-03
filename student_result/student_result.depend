@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1528094172 source:c:\users\bca\documents\codeblocks\student_result\main.c
+	<stdio.h>
+	<stdlib.h>
+

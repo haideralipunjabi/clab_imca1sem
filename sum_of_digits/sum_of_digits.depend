@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1530176620 source:c:\users\bca\documents\codeblocks\sum_of_digits\main.c
+	<stdio.h>
+	<stdlib.h>
+

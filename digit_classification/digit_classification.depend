@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1530090500 source:c:\users\bca\documents\codeblocks\digit_classification\main.c
+	<stdio.h>
+	<stdlib.h>
+

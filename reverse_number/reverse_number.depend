@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1530522158 source:c:\users\bca\documents\codeblocks\reverse_number\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

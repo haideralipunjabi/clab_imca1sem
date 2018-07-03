@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1528535327 source:c:\users\bca\documents\codeblocks\ student_grading\main.c
+	<stdio.h>
+	<stdlib.h>
+

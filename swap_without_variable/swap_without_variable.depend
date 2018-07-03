@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1527747445 source:c:\users\bca\documents\codeblocks\swap_without_variable\main.c
+	<stdio.h>
+	<stdlib.h>
+
