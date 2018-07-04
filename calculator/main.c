@@ -18,15 +18,7 @@ int main()
 
 void calculator(){
     // Take User Input
-    input();
-
-}
-
-/* input()
- * Take two numbers as input from user
- */
-void input(){
-    int num1, num2;
+     int num1, num2;
     system("cls");
     printf("Enter number 1: ");
     scanf("%d", &num1);
@@ -34,6 +26,8 @@ void input(){
     scanf("%d", &num2);
     menu();
     operation(num1,num2);
+   // Redo Prompt
+    redo();
 }
 
 /* menu()
@@ -46,7 +40,6 @@ void menu(){
     printf("2. s for Subtraction\n");
     printf("3. m for Multiplication\n");
     printf("4. d for Division\n");
-
 }
 
 /* operation()
@@ -57,7 +50,7 @@ void operation(num1,num2){
     char op;
     printf("Enter Choice: ");
     scanf(" %c", &op);
-
+    lowercase(&op);
     // Input Validation
     if(op != 'a' && op != 's' && op != 'm' && op != 'd')
         {
@@ -79,9 +72,8 @@ void operation(num1,num2){
                     printf("Quotient = %d",divide(num1,num2));
                     break;
             }
-            // Redo Prompt
-            redo();
-    }
+
+        }
 }
 
 /* add()
@@ -119,9 +111,20 @@ void redo(){
     char ch;
     printf("\nMake another calculation? (y/n): ");
     scanf(" %c", &ch);
-    if(ch == 'y' || ch == 'Y')
+    lowercase(&ch);
+    if(ch == 'y')
         calculator();
-    else if(ch != 'n' && ch != 'N')
+    else if(ch != 'n')
         redo();
 }
 
+void lowercase(char *c){
+    if(*c >= 65 && *c <= 90){
+       *c += 32;
+    }
+}
+void uppercase(char *c){
+    if(*c >= 97 && *c <= 122){
+       *c -= 32;
+    }
+}
