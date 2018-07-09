@@ -1,5 +1,5 @@
 /*
-Title: Armstrong Number checker
+Title: Armstrong Number Checker
 Author: Haider Ali Punjabi
 Mail: me@haideralipunjabi.com
 Date: 09-07-2018
@@ -9,9 +9,12 @@ Date: 09-07-2018
 #include <math.h>
 int main()
 {
+    // Variable Deceleration
     int num;
+    // Input
     printf("Input Number: ");
     scanf("%d", &num);
+    // Output
     if(isArmstrong(num)){
         printf("%d is an Armstrong Number", num);
     }
@@ -21,7 +24,9 @@ int main()
 }
 
 int isArmstrong(int num){
+    // Variable Deceleration
     int sum = 0, _num = num;
+    // Processing
     while(num > 0){
         sum += (int)round(pow(num % 10,3));
         num /= 10;
