@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1530762286 source:/home/haideralipunjabi/C Programming/clab_imca1sem/asquare_minus_bsqaure/main.c
+	<stdio.h>
+	<stdlib.h>
+

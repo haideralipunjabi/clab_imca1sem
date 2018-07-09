@@ -1,0 +1,21 @@
+/home/haideralipunjabi/C Programming/clab_imca1sem/reverse_number/main.c: In function ‘main’:
+/home/haideralipunjabi/C Programming/clab_imca1sem/reverse_number/main.c:16:18: warning: implicit declaration of function ‘reverse’ [-Wimplicit-function-declaration]
+     printf("%d", reverse(a));
+                  ^~~~~~~
+/home/haideralipunjabi/C Programming/clab_imca1sem/reverse_number/main.c: In function ‘reverse’:
+/home/haideralipunjabi/C Programming/clab_imca1sem/reverse_number/main.c:19:5: warning: type of ‘num’ defaults to ‘int’ [-Wimplicit-int]
+ int reverse(num){
+     ^~~~~~~
+/home/haideralipunjabi/C Programming/clab_imca1sem/reverse_number/main.c:20:18: warning: implicit declaration of function ‘lenint’; did you mean ‘llrint’? [-Wimplicit-function-declaration]
+     int length = lenint(num);
+                  ^~~~~~
+                  llrint
+/home/haideralipunjabi/C Programming/clab_imca1sem/reverse_number/main.c: In function ‘lenint’:
+/home/haideralipunjabi/C Programming/clab_imca1sem/reverse_number/main.c:29:5: warning: type of ‘num’ defaults to ‘int’ [-Wimplicit-int]
+ int lenint(num){
+     ^~~~~~
+/tmp/cchGCPBz.o: In function `reverse':
+main.c:(.text+0xf1): undefined reference to `pow'
+/tmp/cchGCPBz.o: In function `lenint':
+main.c:(.text+0x1a0): undefined reference to `pow'
+collect2: error: ld returned 1 exit status
