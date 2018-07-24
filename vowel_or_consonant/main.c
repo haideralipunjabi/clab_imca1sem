@@ -7,7 +7,7 @@ Date: 26-06-2018
 #include <stdio.h>
 #include <stdlib.h>
 
-int isVowel(char c);
+int isVowel(char);
 int main()
 {
     // Variable Deceleration

@@ -1,6 +1,6 @@
 # depslib dependency file v1.0
-1530003671 source:c:\users\bca\documents\codeblocks\digital_timer\main.c
+1530004720 source:c:\users\bca\documents\codeblocks\digital_timer\main.c
 	<stdio.h>
 	<stdlib.h>
-	<unistd.h>
+	<Windows.h>
 
