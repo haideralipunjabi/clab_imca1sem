@@ -18,8 +18,8 @@ int main()
 
     int max_pos = pMax(array);
     int min_pos = pMin(array);
-    printf("Max value in array = %d, at %d\n", array[max_pos], max_pos);
-    printf("Min value in array = %d, at %d\n\n", array[min_pos], min_pos);
+    printf("Max value in array = %d, at %d\n", array[max_pos], max_pos+1);
+    printf("Min value in array = %d, at %d\n\n", array[min_pos], min_pos+1);
 
     printf("Insert number to search: ");
     scanf("%d", &search);
@@ -27,7 +27,7 @@ int main()
     if(result == -1)
         printf("Number %d not found", search);
     else
-        printf("Number %d found at %d", search, result);
+        printf("Number %d found at %d", search, result+1);
 
 }
 
