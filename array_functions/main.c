@@ -9,6 +9,20 @@ Date: 24-07-2018
 
 #define SIZE 5
 #define INT_MAX 2147483647
+#define INT_MIN -2147483648
+/* Function Decelerations */
+void showsearch(int*);
+void showsort(int*);
+void showminmax(int*);
+void showrev(int*);
+void showmenu();
+int find(int*,int);
+int pMax(int*);
+int pMin(int*);
+void sortAsc(int*);
+void sortDesc(int*);
+void arrrev(int*);
+void copyArray(int*,int*);
 
 int main()
 {
@@ -34,7 +48,20 @@ int main()
             break;
         case 4:
             showrev(array);
+            break;
+        case 5:
+            showsum(array);
+            break;
+        case 6:
+            showavg(array);
+            break;
     }
+}
+void showavg(int* array){
+    printf("Average: %d", average(array));
+}
+void showsum(int* array){
+    printf("Sum: %d", sum(array));
 }
 void showsearch(int* array){
     int search, result;
@@ -83,7 +110,10 @@ void showmenu(){
     printf("2. For Array Sort\n");
     printf("3. For Array Search\n");
     printf("4. For Array Reverse\n");
+    printf("5. For Array Sum\n");
+    printf("6. For Array Average\n");
 }
+
 int find(int* arr, int el){
     int i;
     for(i =0; i < SIZE; i++){
@@ -127,7 +157,7 @@ void sortDesc(int* arr){
     for(i=0; i<SIZE; i++){
         int max_pos = pMax(arr);
         sArray[i] = arr[max_pos];
-        arr[max_pos] = -1;
+        arr[max_pos] = INT_MIN;
     }
     copyArray(sArray, arr);
 }
@@ -138,6 +168,16 @@ void arrrev(int* arr){
         nArr[i] = arr[SIZE -1 - i];
     }
     copyArray(nArr, arr);
+}
+int average(int* arr){
+    return sum(arr)/SIZE;
+}
+int sum(int* arr){
+    int i, s = 0;
+    for(i=0; i < SIZE; i++){
+            s += arr[i];
+    }
+    return s;
 }
 void copyArray(int* source, int* target){
     int i;
