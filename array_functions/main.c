@@ -32,6 +32,8 @@ int main()
         case 3:
             showsearch(array);
             break;
+        case 4:
+            showrev(array);
     }
 }
 void showsearch(int* array){
@@ -67,11 +69,20 @@ void showminmax(int* array){
     printf("Max value in array = %d, at %d\n", array[max_pos], max_pos+1);
     printf("Min value in array = %d, at %d\n", array[min_pos], min_pos+1);
 }
+void showrev(int* array){
+    int i;
+    arrrev(array);
+    printf("Reversed Array: \n");
+    for(i=0; i<SIZE; i++){
+        printf("%d\t", array[i]);
+    }
+}
 void showmenu(){
     printf("--- CHOOSE AN OPTION---\n");
     printf("1. For Maximum and Minimum\n");
     printf("2. For Array Sort\n");
     printf("3. For Array Search\n");
+    printf("4. For Array Reverse\n");
 }
 int find(int* arr, int el){
     int i;
@@ -119,6 +130,14 @@ void sortDesc(int* arr){
         arr[max_pos] = -1;
     }
     copyArray(sArray, arr);
+}
+void arrrev(int* arr){
+    int i;
+    int nArr[SIZE];
+    for(i=0; i < SIZE; i++){
+        nArr[i] = arr[SIZE -1 - i];
+    }
+    copyArray(nArr, arr);
 }
 void copyArray(int* source, int* target){
     int i;

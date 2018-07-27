@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1532668906 source:c:\users\bca\documents\codeblocks\factorial_in_array\main.c
+	<stdio.h>
+	<stdlib.h>
+

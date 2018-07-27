@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1532594966 source:c:\users\bca\documents\codeblocks\string_functions\main.c
+	<stdio.h>
+	<stdlib.h>
+
