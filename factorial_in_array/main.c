@@ -2,7 +2,7 @@
 Title: Factorial in Arrays
 Author: Haider Ali Punjabi
 Mail: me@haideralipunjabi.com
-Date: 24-07-2018
+Date: 27-07-2018
 */
 
 #include <stdio.h>
