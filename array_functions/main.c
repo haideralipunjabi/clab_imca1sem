@@ -9,7 +9,7 @@ Date: 24-07-2018
 
 #define SIZE 5
 #define INT_MAX 2147483647
-
+#define INT_MIN -2147483647
 int main()
 {
     int array[SIZE], i,op;
@@ -116,7 +116,7 @@ void sortDesc(int* arr){
     for(i=0; i<SIZE; i++){
         int max_pos = pMax(arr);
         sArray[i] = arr[max_pos];
-        arr[max_pos] = -1;
+        arr[max_pos] = INT_MIN;
     }
     copyArray(sArray, arr);
 }
