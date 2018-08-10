@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1533798960 source:c:\users\bca\documents\codeblocks\bank_account\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
