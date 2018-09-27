@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1534325498 source:/home/haideralipunjabi/C Programming/clab_imca1sem/Trignometric Functions/main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
