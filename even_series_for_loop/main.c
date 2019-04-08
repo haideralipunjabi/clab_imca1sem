@@ -1,3 +1,9 @@
+/*
+Title: Even Series with For Loop
+Author: Haider Ali Punjabi
+Mail: me@haideralipunjabi.com
+Date: 06-06-2018
+*/
 #include <stdio.h>
 #include <stdlib.h>
 

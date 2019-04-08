@@ -13,14 +13,10 @@ int main()
                                 {1,2,3},
                                 {4,5,6},
                                 {7,8,9}
-                            },
-        arr2[SIZE][SIZE] =  {
-                                {9,8,7},
-                                {6,5,4},
-                                {3,2,1}
-
                             };
+    int arr2[SIZE][SIZE];
     int res[SIZE][SIZE];
+    inpArray(arr2);
     addArrays(arr1,arr2,res);
     //subArrays(arr1,arr2,res);
     //mulArrays(arr1,arr2,res);
@@ -32,6 +28,15 @@ int main()
 
 }
 
+void inpArray(int arr[SIZE][SIZE]){
+  int i,j;
+  for(i=0;i<SIZE;i++){
+      for(j=0;j<SIZE;j++){
+          printf("Input %d %d element\n",i,j);
+          scanf("%d",&arr[i][j]);
+      }
+  }
+}
 void prnArray(int arr[SIZE][SIZE]){
     int i,j;
     for(i=0;i<SIZE;i++){
@@ -107,26 +112,4 @@ void zeroArray(int arr[SIZE][SIZE]){
         }
     }
 
-}
-
-
-void minor(int arr[SIZE][SIZE], int size, int I, int J, int min[SIZE-1][SIZE-1]){
-    int i,j;
-    int minI=0,minJ=0;
-    for(i =0; i<size; i++){
-        for(j=0;j<size;j++){
-            if(i==I || j==J){
-                if(i == I){
-                    minI = 1;
-                }
-                if(j == J){
-                    minJ = 1;
-                }
-                continue;
-            }
-
-            min[minI?i-1:i][minJ?j-1:j] = arr[i][j];
-            printf("%d:%d:%d\n", minI?i-1:i, minJ?j-1:j, arr[i][j]);
-        }
-    }
 }
